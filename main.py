@@ -15,6 +15,8 @@ title = soup.find('title')
 # ohno = h1.text
 ohno = title.text.strip()
 
+soup.select("div[data-example='value']")
+
 try:
     mege = soup.find('a', class_='header__m-name')
     mege_title = mege.text.strip()
